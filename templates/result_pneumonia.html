@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        header {
+            background-color: #1b1b1b;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .main-a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .left-element {
+            flex: 1;
+        }
+
+        .right-elements {
+            display: flex;
+            gap: 15px;
+        }
+
+        .right-elements a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .title {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .submitted-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .description {
+            margin: 2rem;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        .recc-text {
+            margin: 1rem 3rem 1rem 3rem;
+            font-size: 1.3rem;
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+    </style>
+    <title>Results</title>
+</head>
+<body>
+
+    <header>
+        <div class="left-element">
+            <h1><a class="main-a" href="/">Image Classification</h1></a>
+        </div>
+
+        <div class="right-elements">
+            <a href="covid">Covid</a>
+            <a href="tuberculosis">Tuberculosis</a>
+            <a href="pneumonia">Pneumonia</a>
+            <a href="cancer">Cancer</a>
+        </div>
+    </header>  
+    
+    <h1 class="title">Image Classification - Pneumonia Result</h1>
+
+    <div class="submitted-image">
+        <img src="../uploads/{{filename}}" alt="your submitted image" style='width:250px;height:250px;margin-top: 30px;margin-bottom:30px;' >
+    </div>
+
+    <p class="description">{{result}}</p>
+    
+    <div class="recc">
+        <h2 class="title">{{heading}}</h2>
+        <p class="recc-text"><span>{{title1}}</span> {{desc1}}</p>
+        <p class="recc-text"><span>{{title2}}</span> {{desc2}}</p>
+        <p class="recc-text"><span>{{title3}}</span> {{desc3}}</p>
+    </div>
+
+</body>
+</html>

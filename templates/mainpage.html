@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        header {
+            background-color: #1b1b1b;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .main-a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .left-element {
+            flex: 1;
+        }
+
+        .right-elements {
+            display: flex;
+            gap: 15px;
+        }
+
+        .right-elements a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        #title {
+            margin-top: 2rem;
+            font-size: 2.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .description {
+            margin: 2rem;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        h2 {
+            text-decoration: underline;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-left: 3rem;
+            text-decoration: underline;
+        }
+
+        .diseases {
+            margin: 1rem 3rem 1rem 3rem;
+            font-size: 1.3rem;
+        }
+
+        h4 {
+            margin: 1rem 3rem 1rem 3rem;
+            font-size: 1.3rem;
+        }
+
+        .buttons {
+            margin: 3rem 0 3rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        button {
+            padding: 2rem;
+            font-size: 1.4rem;
+            background-color: rgb(94, 158, 255);
+            cursor: pointer;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div className="main-page">
+
+        <header>
+            <div class="left-element">
+                <h1><a class="main-a" href="/">Image Classification</h1></a>
+            </div>
+    
+            <div class="right-elements">
+                <a href="covid">Covid</a>
+                <a href="tuberculosis">Tuberculosis</a>
+                <a href="pneumonia">Pneumonia</a>
+                <a href="cancer">Cancer</a>
+            </div>
+        </header>      
+
+        <h1 id="title">Chest Disease Detection</h1>
+        <p class="description">
+            This chest disease diagnosis project aims to develop algorithms or systems that can accurately categorize chest diseases, such as pneumonia,
+            tuberculosis, or lung cancer, based on medical imaging data like X-rays or CT scans, ultimately aiding in early diagnosis and treatment
+            planning. These projects typically involve machine learning techniques to analyze imaging features and distinguish between different chest
+            diseases with high accuracy and efficiency.
+        </p>
+
+        <!-- Abstract -->
+
+        <h2>Abstract</h2>
+        <p class="description">
+            Exploring the application of Deep Learning (DL) in diagnosing chest diseases. Chest diseases, such as pneumonia, tuberculosis, and lung
+            cancer, present significant health challenges that require timely and accurate diagnosis. The model is developed using a Deep Learning
+            (DL) based system that uses chest X-ray and clinical data to make diagnostic predictions. The performance is evaluated against
+            conventional diagnostic methods, demonstrating the potential of Deep Learning to provide faster and more reliable chest disease
+            diagnosis.
+        </p>
+
+        <!-- List of Diseases -->
+
+        <h2>List of Diseases</h2>
+        
+        <h3>Tuberculosis</h3>
+        <p class="diseases">
+            Tuberculosis (TB) is an infectious disease that most often affects the lungs and is caused by a type of bacteria. It spreads through the
+            air when infected people cough, sneeze or spit. Tuberculosis is preventable and curable.
+        </p>
+
+        <h3>Lung Cancer</h3>
+        <ul>
+            <h4><li>Adenocacinoma</li></h4>
+            <p class="diseases">
+            Adenocacinoma is a type of cancer that forms in the glandular tissue, which lines certain internal organs and makes and release substances
+            in the body, such as mucus, digestive juices, and other fluids.
+            </p>
+
+            <h4><li>Large Cell Carcinoma Left</li></h4>
+            <p class="diseases">
+            Large Cell Carcinoma Left (LCC) is categorized as a type of NSCLC (Non-Small-Cell Lung Carcinoma) which originates from epithelial cells
+            of the lung. LCLC is histologically characterized by the presence of large, undifferentiated cells that lack distinctive features of
+            either squamous cell carcinoma or adenocarcinoma.
+            </p>
+
+            <h4><li>Squamous Cell Carcinoma (SCC)</li></h4>
+            <p class="diseases">
+            Squamous Cell Carcinoma (SCC) accounts for the vast majority of malignancies of the oral cavity and oropharynx. There are more than half
+            a million incident cases of squamous-cell carcinoma of the head and neck worldwide each year, primarily affecting the oropharynx,
+            oral cavity, hypopharynx, and larynx.
+            </p>
+        </ul>
+        
+        <h3>Pnuemonia</h3>
+        <p class="diseases">
+        Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus (purulent material),
+        causing cough with phlegm or pus, fever, chills, and difficulty breathing.
+        </p>
+        
+        <h3>Covid</h3>
+        <p class="diseases">
+        Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Most people infected with the virus will experience
+        mild to moderate respiratory illness and spread primarily from person to person through small droplets from the nose or mouth, expelled when
+        a person.
+        </p>
+
+        <!-- Algorithms -->
+
+        <h2>Algorithm Used</h2>
+
+        <h3>CNN</h3>
+        <p class="diseases">
+        CNN is a deep learning architecture that specializes in image analysis, a critical aspect of our lung disease prediction project.It is tailored
+        for processing medical images, particularly chest X-rays, and contributes to the project in the following ways:
+        </p>
+
+        <ul>
+            <h4><li>Image Feature Extraction:</li></h4>
+            <p class="diseases">
+            CNN automatically extracts intricate features from X-ray images, recognizing patterns, abnormalities, and relevant visual cues. It plays
+            a pivotal role in diagnosing heart diseases based on image data.
+            </p>
+
+            <h4><li>Data Fusion:</li></h4>
+            <p class="diseases">
+            CNN seamlessly integrates image data with structured data, facilitating a comprehensive approach to heart disease prediction. By combining
+            predictions from structured data models like XGBoost and AdaBoost, the ensemble model leverages the image analysis capabilities of CNN
+            to enhance overall accuracy.
+            </p>
+        </ul>
+    </div>
+</body>
+</html>
